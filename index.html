@@ -8,11 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.4.1/dist/accordion.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="/gruz-voz_previewassets/main.css">
+    <script src="https://unpkg.com/accordion-js@3.4.1/dist/accordion.min.js"></script>
     <script defer="true" src="https://cdn.jsdelivr.net/npm/a11y-dialog@8/dist/a11y-dialog.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="module" defer="true" src="./js/main.js"></script>
+    <script type="module" defer="true" src="/gruz-voz_previewjs/main.js"></script>
   </head>
   <body>
     <div class="wrapper typo-body-md">
@@ -20,7 +22,7 @@
         <div class="header__container responsive-container">
           <div class="header__logo-wrapper">
             <a class="header__logo-link" href="#">
-              <img class="header__logo-img" src="./images/brand/logotype.png" alt="Логотип Грузовоз">
+              <img class="header__logo-img" src="/gruz-voz_previewimages/brand/logotype.png" alt="Логотип Грузовоз">
             </a>
           </div>
           <nav class="header__nav">
@@ -78,25 +80,25 @@
             <div class="start__bar">
               <div class="start__grid">
                 <div class=" card-omega">
-                  <img src="./images/sections/start/omega-plus.jpg" alt="alt">
+                  <img src="/gruz-voz_previewimages/sections/start/omega-plus.jpg" alt="alt">
                   <p>Выезд оценщика в день обращения</p>
                 </div>
                 <div class=" card-omega">
-                  <img src="./images/sections/start/omega-cargo.jpg" alt="alt">
+                  <img src="/gruz-voz_previewimages/sections/start/omega-cargo.jpg" alt="alt">
                   <p>Перевозим и контролируем 24 часа в сутки</p>
                 </div>
                 <div class=" card-omega">
-                  <img src="./images/sections/start/omega-wallet.jpg" alt="alt">
+                  <img src="/gruz-voz_previewimages/sections/start/omega-wallet.jpg" alt="alt">
                   <p>Оплата по наличному и безналичному расчёту, с НДС</p>
                 </div>
                 <div class=" card-omega">
-                  <img src="./images/sections/start/omega-estate.jpg" alt="alt">
+                  <img src="/gruz-voz_previewimages/sections/start/omega-estate.jpg" alt="alt">
                   <p>Работаем в сфере офисных переездов с 2011 года</p>
                 </div>
               </div>
               <form class="start__form form-centaur">
                 <h2 class="typo-head-2">Бесплатная консультация</h2>
-                <p class="form-centaur__text">Более <span class="bold">70%</span> наших клиентов выбирают нас после звонка. Оставьте заявку, и у вас не останется сомнений в нашем профессионализме.</p>
+                <p class="form-centaur__text">Более <span class="bold">90%</span> наших клиентов выбирают нас после звонка. Оставьте заявку, и у вас не останется сомнений в нашем профессионализме.</p>
                 <div class="form-group">
                   <div class="input input_lg">
                     <input placeholder="Имя" class="form-centaur__input input__elem">
@@ -109,9 +111,17 @@
                     <label for="phone_num" class="input__label">Телефон</label>
                   </div>
                 </div>
-                <div class="form-centaur__accept">
-                  <input type="checkbox" id="i-agree-terms">
-                  <label for="i-agree-terms">Я согласен(а) с условиями <a class="form-centaur__accept-link" href="#">политики конфиденциальности</a>
+                <div class="leave-request__accept compound-checkbox-label">
+                  <div class="checkbox checkbox_primary">
+                    <input type="checkbox" class="undefined checkbox__elem" id="accept-terms">
+                    <label for="accept-terms" class="checkbox__fake">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="checkbox__mark">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7304 1.31701C12.1076 1.72041 12.0864 2.35322 11.683 2.73043L5.05799 10.7304C4.67363 11.0898 4.07649 11.0899 3.69209 10.7305L0.31709 7.6405C-0.0863532 7.26334 -0.107659 6.63053 0.269504 6.22709C0.646666 5.82365 1.27947 5.80234 1.68292 6.1795L4.37492 8.631L10.317 1.26958C10.7204 0.892372 11.3532 0.913608 11.7304 1.31701Z" fill="currentColor"></path>
+                      </svg>
+                    </label>
+                  </div>
+                  <label for="accept-terms" class="compound-checkbox-label__label label">Я согласен(а) с условиями<!-- -->
+                    <a class="undefined link link_dark link_hover link_400" href="#">политики конфиденциальности</a>
                   </label>
                 </div>
                 <button class="form-centaur__submit button-lg button button-primary button-neutral">Оставить заявку<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -122,13 +132,139 @@
             </div>
           </div>
         </div>
+        <div class="undefined how-we-work base-section">
+          <div class="how-we-work__container responsive-container">
+            <h2 class="typo-head-2">Как мы работаем</h2>
+            <div class="how-we-work__grid">
+              <div class=" card-worge">
+                <div class="card-worge__topbar">
+                  <div class="card-worge__badge typo-head-3">01</div>
+                  <p class="card-worge__text-sm">Согласовываем время выезда оценщика</p>
+                  <img src="/gruz-voz_previewicons/40/calendar-tick.svg" alt="Календарь иконка">
+                </div>
+                <p class="card-worge__text-lg">Согласовываем время выезда оценщика</p>
+              </div>
+              <div class=" card-worge">
+                <div class="card-worge__topbar">
+                  <div class="card-worge__badge typo-head-3">02</div>
+                  <p class="card-worge__text-sm">Оцениваем переезд на месте</p>
+                  <img src="/gruz-voz_previewicons/40/search-status.svg" alt="Линза иконка">
+                </div>
+                <p class="card-worge__text-lg">Оцениваем переезд на месте</p>
+              </div>
+              <div class=" card-worge">
+                <div class="card-worge__topbar">
+                  <div class="card-worge__badge typo-head-3">03</div>
+                  <p class="card-worge__text-sm">Заключаем договор</p>
+                  <img src="/gruz-voz_previewicons/40/truck-tick.svg" alt="Машина (грузовая) иконка">
+                </div>
+                <p class="card-worge__text-lg">Заключаем договор</p>
+              </div>
+              <div class=" card-worge">
+                <div class="card-worge__topbar">
+                  <div class="card-worge__badge typo-head-3">04</div>
+                  <p class="card-worge__text-sm">Фиксируем стоимость, назначаем дату переезда</p>
+                  <img src="/gruz-voz_previewicons/40/wallet-check.svg" alt="Кошелек иконка">
+                </div>
+                <p class="card-worge__text-lg">Фиксируем стоимость, назначаем дату переезда</p>
+              </div>
+              <div class=" card-worge">
+                <div class="card-worge__topbar">
+                  <div class="card-worge__badge typo-head-3">05</div>
+                  <p class="card-worge__text-sm">Готовим согласованный план расстановки в новом помещении</p>
+                  <img src="/gruz-voz_previewicons/40/elements.svg" alt="Блоки иконка">
+                </div>
+                <p class="card-worge__text-lg">Готовим согласованный план расстановки в новом помещении</p>
+              </div>
+              <div class=" card-worge">
+                <div class="card-worge__topbar">
+                  <div class="card-worge__badge typo-head-3">06</div>
+                  <p class="card-worge__text-sm">Разбираем мебель и отключаем технику, если необходимо</p>
+                  <img src="/gruz-voz_previewicons/40/cabinet.svg" alt="Мебель иконка">
+                </div>
+                <p class="card-worge__text-lg">Разбираем мебель и отключаем технику, если необходимо</p>
+              </div>
+              <div class=" card-worge">
+                <div class="card-worge__topbar">
+                  <div class="card-worge__badge typo-head-3">07</div>
+                  <p class="card-worge__text-sm">Упаковываем и маркируем мебель и вещи</p>
+                  <img src="/gruz-voz_previewicons/40/box.svg" alt="Блоки иконка">
+                </div>
+                <p class="card-worge__text-lg">Упаковываем и маркируем мебель и вещи</p>
+              </div>
+              <div class=" card-worge">
+                <div class="card-worge__topbar">
+                  <div class="card-worge__badge typo-head-3">08</div>
+                  <p class="card-worge__text-sm">Перевозим в новое место</p>
+                  <img src="/gruz-voz_previewicons/40/routing.svg" alt="Маршрут иконка">
+                </div>
+                <p class="card-worge__text-lg">Перевозим в новое место</p>
+              </div>
+              <div class=" card-worge">
+                <div class="card-worge__topbar">
+                  <div class="card-worge__badge typo-head-3">09</div>
+                  <p class="card-worge__text-sm">Собираем мебель и подключаем технику, расставляем</p>
+                  <img src="/gruz-voz_previewicons/40/plumber.svg" alt="Механик иконка">
+                </div>
+                <p class="card-worge__text-lg">Собираем мебель и подключаем технику, расставляем</p>
+              </div>
+              <div class=" card-worge">
+                <div class="card-worge__topbar">
+                  <div class="card-worge__badge typo-head-3">10</div>
+                  <p class="card-worge__text-sm">Наслаждаемся результатом</p>
+                  <img src="/gruz-voz_previewicons/40/verify.svg" alt="Сертифицировано. иконка">
+                </div>
+                <p class="card-worge__text-lg">Наслаждаемся результатом</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="undefined organization-move base-section">
+          <div class="organization-move__container responsive-container">
+            <div class="organization-move__topbar">
+              <div class="organization-move__info">
+                <h2 class="typo-head-2 organization-move__title">Организация переезда офиса</h2>
+                <p class="organization-move__text">Самостоятельно перевозить вещи и мебель из одного помещения в другое — это относительно дёшево, но долго, тяжело, неудобно. Можно сэкономить много времени, отдав эту задачу соответствующим специалистам в этой области. Вот основные шаги, которые помогут организовать переезд офиса, и сделать этот процесс максимально гладким:</p>
+                <button class=" button-lg button button-outline button-brand">Подробнее о переезде<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.53 13.26L12 9.74L8.47 13.26M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="organization-move__media">
+                <img src="/gruz-voz_previewimages/sections/organization-move/working-area.png" alt="alt">
+              </div>
+            </div>
+            <div class="organization-move__rows">
+              <div class=" board-ice">
+                <div class="board-ice__badge">01</div>
+                <div class="board-ice__text">Планирование. Определите сроки переезда и ключевые этапы. Убедитесь, что у вас есть достаточно времени для подготовки. Составьте список вещей, которые должны переезжать в новое место, и отдельно сложите остальные. Также, подготовьте бюджет, в который войдут расходы на услуги компании по предоставлению переезда, упаковочные материалы для вещей и техники.</div>
+              </div>
+              <div class=" board-ice">
+                <div class="board-ice__badge">02</div>
+                <div class="board-ice__text">Организуйте упаковку документов, оборудования, и личных вещей сотрудников. Используйте качественные упаковочные материалы. Старайтесь хорошо упаковывать технику, зеркала, чтобы они случайно не разбились, во время переезда. Обратите внимание на то, чтобы ваши вещи были сложены в коробки. Это позволит грузчикам быстрее их сносить в машину, и поднимать в новое место, куда вы переезжаете.</div>
+              </div>
+              <div class=" board-ice">
+                <div class="board-ice__badge">03</div>
+                <div class="board-ice__text">Спланируйте заранее расстановку мебели в новом офисе, чтобы в день переезда на это не тратилось много времени.</div>
+              </div>
+              <div class=" board-ice">
+                <div class="board-ice__badge">04</div>
+                <div class="board-ice__text">Свяжитесь с нами. Позвоните нам по телефону, либо оставьте заявку на сайте, и наши менеджеры проконсультируют вас, по всем этапам переезда подробнее. Они сообщат ориентировочную стоимость работ, и общее время, которое понадобится на их выполнение. Договоритесь с нами о конкретной дате и времени, и мы обеспечим вам оперативный переезд офиса под ключ, без заморочек и неожиданных нюансов.</div>
+              </div>
+              <div class=" board-ice">
+                <div class="board-ice__badge">05</div>
+                <div class="board-ice__text">День переезда. Организуйте беспрепятственный заезд для машины, и входа грузчиков на территорию вашего офиса, чтобы начать переезд.</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class=" footer">
         <div class="footer__container responsive-container">
           <div class="first footer__topbar">
             <div class="foooter__logotype-wrapper">
               <a class="footer__logotype-link" href="#">
-                <img src="./images/brand/logotype-white.png" alt="Логотип Грузовоз (Белый вариант)">
+                <img src="/gruz-voz_previewimages/brand/logotype-white.png" alt="Логотип Грузовоз (Белый вариант)">
               </a>
             </div>
             <ul class="footer__menu-top menu">
@@ -214,7 +350,19 @@
                 <label for="popup-phone" class="input__label">Телефон</label>
               </div>
             </div>
-            <label class="mb-1 block" for="">Я согласен(а) с условиями политики конфиденциальности<!-- --> </label>
+            <div class="leave-request__accept compound-checkbox-label">
+              <div class="checkbox checkbox_primary">
+                <input type="checkbox" class="undefined checkbox__elem" id="accept-terms-popup">
+                <label for="accept-terms-popup" class="checkbox__fake">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="checkbox__mark">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7304 1.31701C12.1076 1.72041 12.0864 2.35322 11.683 2.73043L5.05799 10.7304C4.67363 11.0898 4.07649 11.0899 3.69209 10.7305L0.31709 7.6405C-0.0863532 7.26334 -0.107659 6.63053 0.269504 6.22709C0.646666 5.82365 1.27947 5.80234 1.68292 6.1795L4.37492 8.631L10.317 1.26958C10.7204 0.892372 11.3532 0.913608 11.7304 1.31701Z" fill="currentColor"></path>
+                  </svg>
+                </label>
+              </div>
+              <label for="accept-terms-popup" class="compound-checkbox-label__label label">Я согласен(а) с условиями<!-- -->
+                <a class="undefined link link_dark link_hover link_400" href="#">политики конфиденциальности</a>
+              </label>
+            </div>
             <div>
               <button class="leave-request__send button-lg button button-primary button-brand">Отправить</button>
             </div>
@@ -226,7 +374,7 @@
           <div class="mobile-menu__overlay"></div>
           <div class="mobile-menu-index mobile-menu__inner">
             <a href="#" class="mobile-menu__logotype-bar">
-              <img class="mobile-menu__logotype-img" src="./images/brand/logotype.png" alt="Логотип Грузовоз">
+              <img class="mobile-menu__logotype-img" src="/gruz-voz_previewimages/brand/logotype.png" alt="Логотип Грузовоз">
             </a>
             <div class="mobile-menu__label">mobile menu</div>
             <div class="mobile-menu__burger burger">

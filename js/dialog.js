@@ -5,8 +5,6 @@ const dialogElement = document.querySelector('#leave-request-dialog')
 const dialog = new A11yDialog(dialogElement)
 const closeDialogButton = document.querySelector('.leave-request-close')
 
-console.log('triggerLeaveRequest: ', triggerLeaveRequest)
-
 function showDialog() {
   document.body.classList.add('scroll-lock')
   dialog.show()

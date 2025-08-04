@@ -8,11 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.4.1/dist/accordion.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="/gruz-voz_previewassets/main.css">
+    <script src="https://unpkg.com/accordion-js@3.4.1/dist/accordion.min.js"></script>
     <script defer="true" src="https://cdn.jsdelivr.net/npm/a11y-dialog@8/dist/a11y-dialog.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="module" defer="true" src="./js/main.js"></script>
+    <script type="module" defer="true" src="/gruz-voz_previewjs/main.js"></script>
   </head>
   <body>
     <div class="wrapper typo-body-md">
@@ -20,7 +22,7 @@
         <div class="header__container responsive-container">
           <div class="header__logo-wrapper">
             <a class="header__logo-link" href="#">
-              <img class="header__logo-img" src="./images/brand/logotype.png" alt="Логотип Грузовоз">
+              <img class="header__logo-img" src="/gruz-voz_previewimages/brand/logotype.png" alt="Логотип Грузовоз">
             </a>
           </div>
           <nav class="header__nav">
@@ -187,6 +189,49 @@
                 </div>
               </div>
             </div>
+            <div class="components__section base-section">
+              <div class="components__section-title typo-head-2">Checkboxes:</div>
+              <div class="components__section-box">
+                <div class="form-group">
+                  <div class="checkbox checkbox_primary">
+                    <input type="checkbox" class="undefined checkbox__elem" id="accept-1">
+                    <label for="accept-1" class="checkbox__fake">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="checkbox__mark">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7304 1.31701C12.1076 1.72041 12.0864 2.35322 11.683 2.73043L5.05799 10.7304C4.67363 11.0898 4.07649 11.0899 3.69209 10.7305L0.31709 7.6405C-0.0863532 7.26334 -0.107659 6.63053 0.269504 6.22709C0.646666 5.82365 1.27947 5.80234 1.68292 6.1795L4.37492 8.631L10.317 1.26958C10.7204 0.892372 11.3532 0.913608 11.7304 1.31701Z" fill="currentColor"></path>
+                      </svg>
+                    </label>
+                  </div>
+                  <div class="form-error">Error occured on the server.</div>
+                </div>
+                <div class="form-group">
+                  <div class="checkbox checkbox_secondary">
+                    <input type="checkbox" class="undefined checkbox__elem" id="accept-2">
+                    <label for="accept-2" class="checkbox__fake">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="checkbox__mark">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7304 1.31701C12.1076 1.72041 12.0864 2.35322 11.683 2.73043L5.05799 10.7304C4.67363 11.0898 4.07649 11.0899 3.69209 10.7305L0.31709 7.6405C-0.0863532 7.26334 -0.107659 6.63053 0.269504 6.22709C0.646666 5.82365 1.27947 5.80234 1.68292 6.1795L4.37492 8.631L10.317 1.26958C10.7204 0.892372 11.3532 0.913608 11.7304 1.31701Z" fill="currentColor"></path>
+                      </svg>
+                    </label>
+                  </div>
+                  <div class="form-error">Error occured on the server.</div>
+                </div>
+              </div>
+            </div>
+            <div class="components__section base-section">
+              <div class="components__section-title typo-head-2">Links:</div>
+              <div class="components__section-box">
+                <a class="undefined link link_dark  ">Tap/click me</a>
+                <a class="undefined link link_light  ">Tap/click me</a>
+              </div>
+            </div>
+            <div class="components__section base-section">
+              <div class="components__section-title typo-head-2">Labels:</div>
+              <div class="components__section-box">
+                <label for="some-field-01" class="undefined label">Я согласен(а) с условиями<!-- -->
+                  <a class="undefined link link_dark link_hover link_400">политики конфиденциальности </a>
+                </label>
+                <label for="some-field-02" class="undefined label">Label for input username</label>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -195,7 +240,7 @@
           <div class="first footer__topbar">
             <div class="foooter__logotype-wrapper">
               <a class="footer__logotype-link" href="#">
-                <img src="./images/brand/logotype-white.png" alt="Логотип Грузовоз (Белый вариант)">
+                <img src="/gruz-voz_previewimages/brand/logotype-white.png" alt="Логотип Грузовоз (Белый вариант)">
               </a>
             </div>
             <ul class="footer__menu-top menu">
@@ -281,7 +326,19 @@
                 <label for="popup-phone" class="input__label">Телефон</label>
               </div>
             </div>
-            <label class="mb-1 block" for="">Я согласен(а) с условиями политики конфиденциальности<!-- --> </label>
+            <div class="leave-request__accept compound-checkbox-label">
+              <div class="checkbox checkbox_primary">
+                <input type="checkbox" class="undefined checkbox__elem" id="accept-terms-popup">
+                <label for="accept-terms-popup" class="checkbox__fake">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="checkbox__mark">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7304 1.31701C12.1076 1.72041 12.0864 2.35322 11.683 2.73043L5.05799 10.7304C4.67363 11.0898 4.07649 11.0899 3.69209 10.7305L0.31709 7.6405C-0.0863532 7.26334 -0.107659 6.63053 0.269504 6.22709C0.646666 5.82365 1.27947 5.80234 1.68292 6.1795L4.37492 8.631L10.317 1.26958C10.7204 0.892372 11.3532 0.913608 11.7304 1.31701Z" fill="currentColor"></path>
+                  </svg>
+                </label>
+              </div>
+              <label for="accept-terms-popup" class="compound-checkbox-label__label label">Я согласен(а) с условиями<!-- -->
+                <a class="undefined link link_dark link_hover link_400" href="#">политики конфиденциальности</a>
+              </label>
+            </div>
             <div>
               <button class="leave-request__send button-lg button button-primary button-brand">Отправить</button>
             </div>
@@ -293,7 +350,7 @@
           <div class="mobile-menu__overlay"></div>
           <div class="mobile-menu-index mobile-menu__inner">
             <a href="#" class="mobile-menu__logotype-bar">
-              <img class="mobile-menu__logotype-img" src="./images/brand/logotype.png" alt="Логотип Грузовоз">
+              <img class="mobile-menu__logotype-img" src="/gruz-voz_previewimages/brand/logotype.png" alt="Логотип Грузовоз">
             </a>
             <div class="mobile-menu__label">mobile menu</div>
             <div class="mobile-menu__burger burger">
